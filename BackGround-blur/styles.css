@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.container__image {
+  height: 100vh;
+  background-image: url("./images/bg.jpg");
+  background-color: coral;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: all 550ms ease-in;
+}
+.container__inner {
+  width: 50rem;
+  height: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./images/bg.jpg");
+  background-position: center;
+  background-size: 308%;
+  z-index: 2;
+  transition: box-shadow 550ms ease-in;
+}
+.container__inner:hover {
+  box-shadow: 0rem 0.1rem 5rem rgba(0, 0, 0, 0.8);
+}
+.container__inner:hover + .container__image {
+  filter: blur(0.5rem);
+}
