@@ -1,6 +1,6 @@
 ## BackGround Blur
 
-css property used is filter : blut() takes px or rem or em value.
+css property used is filter : blur() takes px or rem or em value.
 
 Note : It will be applied on all its child as well so make a separate div out of box.
 
