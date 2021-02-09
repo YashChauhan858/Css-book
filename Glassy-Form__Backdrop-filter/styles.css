@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  height: 100vh;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -9rem;
+  display: grid;
+  place-items: center;
+}
+.myform {
+  height: 40rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px); /* Not in firefox */
+  box-shadow: 0.1rem 0.1rem 5rem rgba(0, 0, 0, 0.4);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+form > input,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+form > input {
+  border: none;
+  height: 4rem;
+  color: dimgray;
+  font-size: 1.7rem;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+  text-align: center;
+  outline-width: 0rem;
+}
+form > button {
+  background-color: deepskyblue;
+  border: none;
+  color: white;
+  height: 3rem;
+  border-radius: 0.4rem;
+  width: 50%;
+  outline-width: 0rem;
+}

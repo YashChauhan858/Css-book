@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+/* 
+    we need to add height 100vh(or any height value you want/just a fixed height)
+     to the container otherwide it wont work 
+    the reason it work with body without any height given to body is because 
+    body has 100vh height by default.
+
+    That gives the scroll something to snap to. Otherwise, 
+    the <div class="container"> will have a height equal to
+    that of all the child elements combined, which doesn't give 
+    the scroll a fixed window to snap to.
+
+    Likewise, if you were doing horizontal scrolling, you'd need 
+    to provide your container with a fixed width. 
+
+    at the time of this repo its 69.83%
+*/
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  margin: 0;
+  height: 100vh;
+}
+section {
+  padding: 7em;
+  height: calc(100vh - 14em);
+  color: white;
+  scroll-snap-align: start;
+}
+section:nth-of-type(1) {
+  background: rgb(96, 175, 21);
+}
+section:nth-of-type(2) {
+  background: rgb(21, 139, 175);
+}
+section:nth-of-type(3) {
+  background: rgb(175, 21, 129);
+}
+section > h3 {
+  font-size: 2.3em;
+}
