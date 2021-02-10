@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ebf5fc;
+}
+.container__card {
+  width: 30rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 2.8rem;
+  box-shadow: -0.8rem -0.8rem 1rem rgba(255, 255, 255, 0.4),
+    0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.2);
+}
+.container__card:hover {
+  box-shadow: inset -0.8rem -0.8rem 1rem rgba(255, 255, 255, 0.6),
+    inset 0.3rem 0.3rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+.card__img > img {
+  height: 8rem;
+}
+.card__info {
+  width: 90%;
+  gap: 1rem;
+  text-align: center;
+  color: #32a3b1;
+}
+.card__info > h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card__info > p {
+  font-size: 1.2rem;
+  word-spacing: 0.7rem;
+}
+.container__card:hover .card__info {
+  transform-origin: top;
+  transform: scale(0.98);
+}
+.container__card:hover .card__img {
+  transform-origin: bottom;
+  transform: scale(0.98);
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #32a3b1;
+  padding: 1rem 3rem;
+  border-radius: 2.8rem;
+  box-shadow: -0.8rem -0.8rem 1rem rgba(255, 255, 255, 0.4),
+    0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  box-shadow: inset -0.8rem -0.8rem 0.8rem rgba(255, 255, 255, 0.4),
+    inset 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+.container__card:hover .btn {
+  transform-origin: top;
+  transform: scale(0.98);
+}
