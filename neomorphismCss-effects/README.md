@@ -1,7 +1,8 @@
 ## Simple Neomorphism Effect On Card
 
 Achieved this using box shadow
-Note : You cannot apply transition from nroaml box-shadow to inset or visa-versa
+
+Note : You cannot apply transition from normal box-shadow to inset or visa-versa
 
 ### Normal
 
