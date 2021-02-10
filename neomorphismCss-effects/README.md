@@ -10,8 +10,4 @@ Note : You cannot apply transition from normal box-shadow to inset or visa-versa
 
 ### Hover On Card
 
-<img src="./images/HoverOnCard.png" width="700"/>
-
-### Hover On Card Plus Read Me
-
-<img src="./images/HoverOnCardplusReadMe.png" width="700"/>
+<img src="./images/OnHover.png" width="700"/>
