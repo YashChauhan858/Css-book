@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+.card {
+  height: 26rem;
+  width: 20rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10rem;
+  height: 10rem;
+  background-color: RGBA(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.1rem);
+  background-clip: padding-box;
+  border: 0.1rem solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  transition: bottom 400ms ease-out;
+}
+.info > h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  word-spacing: 0.6rem;
+  transform: translateY(-15rem);
+  opacity: 0;
+  transition: transform 1500ms ease-in-out, opacity 600ms ease-in-out;
+}
+ul.iconHolder {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  padding-left: 0;
+}
+ul.iconHolder li.icons > img {
+  height: 2rem;
+  transform: translateY(10rem);
+  transition: transform calc(450ms * var(--i)) ease-in-out;
+}
+.card:hover li.icons > img {
+  transform: translateY(0rem);
+}
+.card:hover .info > h1 {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.card:hover .info {
+  bottom: 0;
+}
