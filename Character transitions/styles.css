@@ -1,45 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
+  height: 100vh;
   background-color: black;
   font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y proximity;
+  background-image: url("./p404.png");
+  background-color: black;
+  position: relative;
 }
 section {
   height: 100vh;
 }
 .section_1 {
-  padding-top: 230px;
+  scroll-snap-align: start;
+  padding-top: 330px;
   padding-left: 230px;
 }
 .section_1 h1 {
   width: 100%;
+  display: flex;
   font-size: 50px;
   color: white;
   letter-spacing: 8px;
   font-weight: 900;
 }
-h1 span {
-  transform: scale(0);
-  display: inline-block;
-  transition: all 0.5s;
+.follow {
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: grid;
+  place-content: center;
+  transition: all 100ms;
+  pointer-events: none; /* Imp */
 }
-h1 span.spaceBetween {
-  margin-left: 25px;
-}
-.section_2 {
-  padding-left: 230px;
-}
-.section_2 p {
-  color: white;
-  width: 80%;
-  font-size: 40px;
-}
-.section_2 p span.pPieces {
-  display: inline-block;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-.section_2 p span.pPieces.spaceBetween {
-  margin-left: 25px;
+
+h1:hover ~ .follow {
+  height: 85px;
+  width: 85px;
+  background-color: white;
+  opacity: 0.5;
 }
